@@ -29,7 +29,12 @@ def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-    result = array.find {|item| item.include?(cheese_types.to_s)}
-    puts result
-
+    array.each do |item|
+      cheese_types.each do |cheese|
+        if item == cheese
+          narray << cheese 
+        end
+      end
+    end
+    return narray[0]
 end
