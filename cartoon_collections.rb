@@ -30,6 +30,9 @@ def find_the_cheese(array)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   if array.include?(cheese_types) == false
     return nil
-  else 
+  elsif array.include?(cheese_types) == true
+    index = cheese_types.map {|i|
+      array.find_index(i)}.compact.min
+    return array[index]
   end
 end
