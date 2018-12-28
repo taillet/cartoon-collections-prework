@@ -36,7 +36,8 @@ def find_the_cheese(array)# code an argument here
         result = list
         break
       end
+      return result
+
     end
-    return result
   end
 end
