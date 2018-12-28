@@ -32,4 +32,5 @@ def find_the_cheese(array)# code an argument here
     return nil
   elsif array.include(cheese_types) != false
     puts "cheddar"
+  end
 end
