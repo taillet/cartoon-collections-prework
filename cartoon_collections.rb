@@ -32,6 +32,6 @@ def find_the_cheese(array)# code an argument here
     return nil
   elsif array.include?(cheese_types) == true
     cheese_types.map {|i|
-      array.find_index(i)}.compact.min
+      array.find(i)}
   end
 end
